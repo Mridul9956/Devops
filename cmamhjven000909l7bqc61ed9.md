@@ -8,18 +8,108 @@ tags: devops, devops-articles, devopscommunity, 90-days-of-devops-challenge
 
 ---
 
-## 🌍 OSI & TCP/IP Models – How Data Moves
+### 🌍 OSI & TCP/IP Models – How Data Travels Across Networks
 
-Think of networks like a **postal service** for data. The **OSI (7 layers)** and **TCP/IP (4 layers)** models explain how information is sent, received, and processed.
+Networks function like a well-organized postal system for data, ensuring information is efficiently transmitted, received, and understood. The **OSI Model** (7 layers) and **TCP/IP Model** (4 layers) are frameworks that describe this process. Each layer has a specific role in managing data transmission.
 
-* **Application Layer** – This is where web browsing, emails, and messaging happen (e.g., HTTP, HTTPS).
+---
+
+## **OSI Model (7 Layers)**
+
+The OSI (Open Systems Interconnection) model provides a **structured** approach to how data moves through a network, from the user interface to physical transmission.
+
+### **1\. Application Layer**
+
+* Acts as the interface between users and the network.
     
-* **Transport Layer** – Ensures data arrives safely, like a delivery tracking system (e.g., TCP, UDP).
+* Handles services like web browsing, email, and messaging.
     
-* **Network Layer** – Helps find the best route for data, like a GPS for internet packets (e.g., IP addressing).
+* Common protocols: **HTTP, HTTPS, FTP, SMTP, POP3, IMAP, DNS**.
     
 
-Each layer plays a role in ensuring smooth and **secure data communication**!
+### **2\. Presentation Layer**
+
+* Formats and encrypts data for secure communication.
+    
+* Ensures compatibility across different systems.
+    
+* Handles compression, encoding, and encryption.
+    
+* Example formats: **JPEG, MP3, TLS, SSL**.
+    
+
+### **3\. Session Layer**
+
+* Establishes, manages, and terminates connections between devices.
+    
+* Ensures data exchanges happen properly between sender and receiver.
+    
+* Protocols: **RPC, NetBIOS, PPTP, SOCKS**.
+    
+
+### **4\. Transport Layer**
+
+* Guarantees reliable communication between devices.
+    
+* Provides error checking and ensures complete data delivery.
+    
+* Common protocols: **TCP (reliable) and UDP (fast, but less reliable)**.
+    
+
+### **5\. Network Layer**
+
+* Determines the best path for data to travel.
+    
+* Assigns IP addresses to packets.
+    
+* Handles routing decisions.
+    
+* Protocols: **IP, ICMP, IGMP**.
+    
+
+### **6\. Data Link Layer**
+
+* Ensures error-free transmission between directly connected nodes.
+    
+* Divides data into frames for delivery.
+    
+* Protocols: **Ethernet, MAC (Media Access Control), ARP (Address Resolution Protocol)**.
+    
+
+### **7\. Physical Layer**
+
+* Transmits raw data as electrical, optical, or radio signals.
+    
+* Defines hardware aspects like cables, switches, and wireless networks.
+    
+
+---
+
+## **TCP/IP Model (4 Layers)**
+
+The **TCP/IP (Transmission Control Protocol/Internet Protocol) model** is a more simplified version of OSI, widely used for real-world internet communication.
+
+### **1\. Application Layer**
+
+* Functions similarly to the OSI Application, Presentation, and Session layers.
+    
+* Handles protocols such as **HTTP, SMTP, FTP, DNS**.
+    
+
+### **2\. Transport Layer**
+
+* Ensures **reliable** or **fast** communication using **TCP (error-checked)** or **UDP (speed-focused)** protocols.
+    
+
+### **3\. Internet Layer**
+
+* Defines how packets move across networks using **IP addressing, routing, and forwarding**.
+    
+
+### **4\. Network Access Layer**
+
+* Combines OSI's **Data Link** and **Physical** layers to manage the actual data transmission.
+    
 
 ## 🔗 DevOps Protocols & Ports
 
