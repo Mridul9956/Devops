@@ -1,0 +1,12 @@
+Basic Git Commands
+- git init – Initializes a new Git repository.
+- git clone <repo_url> – Clones an existing repository from a remote source.
+- git status – Shows the current state of your working directory.
+- git add <file> – Stages changes before committing.
+- git commit -m "message" – Commits staged changes with a descriptive message.
+Branching & Merging
+- git branch – Lists branches or creates a new one (git branch <branch-name>).
+- git checkout <branch> – Switches between branches.
+- git merge <branch> – Merges a specified branch into the current one.
+- git rebase <branch> – Reapplies commits onto another branch, keeping a cleaner history.
+
